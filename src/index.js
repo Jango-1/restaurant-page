@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     heroTextContent.appendChild(heroParagraph2);
 
     const heroImage = document.createElement('img');
-    heroImage.src = ''; // Set new URL
+    heroImage.src = './images/hero.svg';
     heroImage.alt = 'Hero image';
     heroImage.style.height = '350px';
     heroImage.style.width = '100%';
