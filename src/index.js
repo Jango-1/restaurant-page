@@ -1,4 +1,6 @@
 import "./styles.css";
+import heroImageBlank from "./images/hero.svg";
+import avatarImage from "./images/Avatar.png";
 
 document.addEventListener('DOMContentLoaded', function() {
     const content = document.getElementById('content');
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     heroTextContent.appendChild(heroParagraph2);
 
     const heroImage = document.createElement('img');
-    heroImage.src = './images/hero.svg';
+    heroImage.src = heroImageBlank;
     heroImage.alt = 'Hero image';
     heroImage.style.height = '350px';
     heroImage.style.width = '100%';
@@ -63,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cardProfile.classList.add('profile');
 
         const cardImage = document.createElement('img');
-        cardImage.src = profileImage || ''; // Set profile image URL
+        cardImage.src = profileImage || avatarImage;
         cardImage.alt = 'Profile picture';
         cardImage.style.height = '40px';
         cardImage.style.width = '40px';
@@ -96,9 +98,13 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const reviewers = [
-        { name: "John Doe", description: "Food Critic", profileImage: "", text: reviewTexts[0] },
-        { name: "Jane Smith", description: "Restaurant Blogger", profileImage: "", text: reviewTexts[1] },
-        { name: "Alice Johnson", description: "Frequent Diner", profileImage: "", text: reviewTexts[2] }
+        { name: "John Doe", description: "Food Critic", profileImage: avatarImage, text: reviewTexts[0] },
+        { name: "Jane Smith", description: "Restaurant Blogger", profileImage: avatarImage, text: reviewTexts[1] },
+        { name: "Alice Johnson", description: "Frequent Diner", profileImage: avatarImage, text: reviewTexts[2] },
+        { name: "Alice Johnson", description: "Frequent Diner", profileImage: avatarImage, text: reviewTexts[0] },
+        { name: "Alice Johnson", description: "Frequent Diner", profileImage: avatarImage, text: reviewTexts[1] },
+        { name: "Alice Johnson", description: "Frequent Diner", profileImage: avatarImage, text: reviewTexts[2] }
+        
     ];
 
     // Add the cards dynamically
