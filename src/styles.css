@@ -63,22 +63,41 @@ section.hero {
     justify-content: flex-start;
 }
 
-.card {
-    width: 328px;
-    height: 100%;
+.review-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
     border-radius: 8px;
-    border: #D9D9D9 solid 2px;
-    padding: 24px;
-    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+    max-width: 340px;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 8px;
 }
 
 .profile {
     display: flex;
-    flex: row;
     align-items: center;
-    gap: 12px;
 }
 
-.names h5, .names p {
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.names h3 {
     margin: 0;
+    font-size: 1.2em;
+}
+
+.names p {
+    margin: 0;
+    color: #666;
 }
